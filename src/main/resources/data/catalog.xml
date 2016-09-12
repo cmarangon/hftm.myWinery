@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE composition>
+
+<catalog>
+
+    <wine>
+        <name>Casa Illana Seleccion</name>
+        <color>Rot</color>
+        <country>Spanien</country>
+        <year>2006</year>
+        <origin>DO Ribera del Jucar</origin>
+        <grape>Syrah 50% Petit Verdot 50%</grape>
+        <producer>Casa Illana</producer>
+        <character>Dunkles Kirschrot. Komplexe blumige Nase, Veilchen Rosen.
+            Opulenter kraftvoller Körper nach roten Früchten Cassis, Brombeeren.
+            Samtige eleganter langer Abgang.
+        </character>
+        <qualification>Passt hervorragend zu allen Fleischgerichten und Käse.
+        </qualification>
+        <storagestability>2009 - 2016</storagestability>
+        <drinkingtemperature>18</drinkingtemperature>
+        <alcohol>14.5</alcohol>
+        <price>34.90</price>
+    </wine>
+
+    <wine>
+        <name>Vala de Solabal</name>
+        <color>Rot</color>
+        <country>Spanien</country>
+        <year>2008</year>
+        <origin>DOCa Rioja</origin>
+        <grape>100% Tempranillo</grape>
+        <producer>Bodegas Solabal</producer>
+        <character>Dunkles Rot mit violettem Schimmer. Hochkonzentrierter Duft
+            nach dunklen Früchten und Schokolade. Am Gaumen beeindruckende Kraft,
+            viel Tiefe und noble Eleganz. Nachhaltiger fruchtiger Abgang.
+        </character>
+        <qualification>Passt hervorragend kräftigen Fleischgerichten und Käse.
+        </qualification>
+        <storagestability>2009 - 2020</storagestability>
+        <drinkingtemperature>18</drinkingtemperature>
+        <alcohol>14.5</alcohol>
+        <price>49.00</price>
+    </wine>
+
+    <wine>
+        <name>EL 26</name>
+        <color>Rot</color>
+        <country>Spanien</country>
+        <year>2008</year>
+        <origin>DOQ Priorat</origin>
+        <grape>Cabernet Sauvignon 40% Syrah 20% Granacha 20% Carinena 20%
+        </grape>
+        <producer>Elvi Wines</producer>
+        <character>Dunkles Kirschrot. Reichhaltiger Duft nach dunklen
+            Früchten. Weicher voller Antrunk, am Gaumen beeindruckende Kraft an
+            Kirschen und Dörrpflaumen erinnernd. Sehr langes Finale. Eleganter
+            sehr komplexer Wein der Harmonie und Kraft perfekt vereinigt.
+        </character>
+        <qualification>Passt hervorragend zu allen Fleischgerichten und Käse.
+        </qualification>
+        <storagestability>2012 - 2020</storagestability>
+        <drinkingtemperature>18</drinkingtemperature>
+        <alcohol>14.5</alcohol>
+        <price>54.00</price>
+    </wine>
+
+    <wine>
+        <name>Linteo Nero d'Avola</name>
+        <color>Rot</color>
+        <country>Italien</country>
+        <year>2012</year>
+        <origin>IGT Sicilia Rosso</origin>
+        <grape>Nero d'Avola</grape>
+        <producer>Cantine Francesco Minini</producer>
+        <character>Duftet nach Kirschen und roten Beeren. Voller Körper,
+            dezente Säure, weiche Tanine. Angenehmer runder Abgang
+        </character>
+        <qualification>Passt zur italienischen Küche, pikant gewürzten
+            Speisen, Fleischgerichten und Käse.
+        </qualification>
+        <storagestability>2013 - 2016</storagestability>
+        <drinkingtemperature>16</drinkingtemperature>
+        <alcohol>13</alcohol>
+        <price>13.90</price>
+    </wine>
+
+    <wine>
+        <name>Nerello Mascalese</name>
+        <color>Rot</color>
+        <country>Italien</country>
+        <year>2011</year>
+        <origin>IGT Sicilia </origin>
+        <grape>Nerello Mascalese</grape>
+        <producer>Nerello Mascalese </producer>
+        <character>Dunkles Rubinrot. Fruchtige Nase, ausgewogener Körper mit
+            weichen Tanninen. Elegantes Frucht - Finale.
+        </character>
+        <qualification>Sehr vielseitiger Wein, gutbürgerliche Küche.
+        </qualification>
+        <storagestability>2013 - 2016</storagestability>
+        <drinkingtemperature>16</drinkingtemperature>
+        <alcohol>13.50</alcohol>
+        <price>14.90</price>
+    </wine>
+
+    <wine>
+        <name>Lamadàli Negroamaro</name>
+        <color>Rot</color>
+        <country>Italien</country>
+        <year>2009</year>
+        <origin>IGT Puglia</origin>
+        <grape>100% Negroamaro</grape>
+        <producer>Tenuta Fujanera</producer>
+        <character>Dunkles Rubinrot, schöne fruchtige Nase nach Cassis und
+            Kirschen. Voller eleganter Körper mit dezenten Tanninen. Weicher,
+            Geschmeidiger, nachhaltiger Abgang.
+        </character>
+        <qualification>Sehr vielseitig, auch nach dem Essen ein Genuss.
+        </qualification>
+        <storagestability>2010 - 2015</storagestability>
+        <drinkingtemperature>18</drinkingtemperature>
+        <alcohol>14</alcohol>
+        <price>15.20</price>
+    </wine>
+
+    <wine>
+        <name>Casa Illana Tradicion</name>
+        <color>Rot</color>
+        <country>Spanien</country>
+        <year>2007</year>
+        <origin>DO Ribera del Jucar</origin>
+        <grape>Bobal 45%, Tempranillo 30%, Syrah 25%</grape>
+        <producer>Casa Illana</producer>
+        <character>Klares Granatrot. Verführerischer Duft nach roten Früchten
+            und Veilchen. Gut strukturierter Körper mit cremigem Auftakt, am
+            Gaumen leicht mineralig, würzig und dezentem Holz. Langes elegantes
+            Finale.
+        </character>
+        <qualification>Passt hervorragend zu allen Fleischgerichten. Macht
+            auch nach dem Essen noch sehr viel Freude.
+        </qualification>
+        <storagestability>2010 - 2015</storagestability>
+        <drinkingtemperature>18</drinkingtemperature>
+        <alcohol>13.5</alcohol>
+        <price>15.00</price>
+    </wine>
+
+    <wine>
+        <name>Solabal Reserva</name>
+        <color>Rot</color>
+        <country>Spanien</country>
+        <year>2007</year>
+        <origin>DOCa Rioa</origin>
+        <grape>100% Tempranillo</grape>
+        <producer>Bodegas Solabal</producer>
+        <character>Dunkles Rot mit violettem Schimmer. Intensive Nase nach
+            roten Früchten, Zeder und ein hauch Vanille. Kraftvoller eleganter
+            Körper mit fülle und tiefe. Fruchtiges langes Finale, elegant und
+            voll.
+        </character>
+        <qualification>Passt hervorragend zu allen Fleischgerichten. Macht
+            auch nach dem Essen noch sehr viel Freude.
+        </qualification>
+        <storagestability>2013 - 2018</storagestability>
+        <drinkingtemperature>18</drinkingtemperature>
+        <alcohol>14.5</alcohol>
+        <price>28.30</price>
+    </wine>
+
+    <wine>
+        <name>Elego Amarone</name>
+        <color>Rot</color>
+        <country>Italien</country>
+        <year>2008</year>
+        <origin>DOC Valpolicella Classico</origin>
+        <grape>Corvina 70%, Rondinella 25% Molinara 5%</grape>
+        <producer>Cantine Salvalai</producer>
+        <character>Von Intensiver granatroter Farbe und anhaltendem Duft. Der
+            Geschmack nach Kirschen, Gewürzen und einem angenehmen Hauch von
+            Bittermandeln, kräftiger Körper, gleichzeitig weich, warm, voll und
+            samtig.
+        </character>
+        <qualification>Zu rotem Fleisch, Wildgerichten, Braten und reifem
+            Käse. Ebenso zum ausklang der Mahlzeiten.
+        </qualification>
+        <storagestability>2011 - 2017</storagestability>
+        <drinkingtemperature>18</drinkingtemperature>
+        <alcohol>14.5</alcohol>
+        <price>45.00</price>
+    </wine>
+
+    <wine>
+        <name>Moscato d'Asti</name>
+        <color>Weiss</color>
+        <country>Italien</country>
+        <year>2012</year>
+        <origin>DOCG Asti</origin>
+        <grape>100% Moscato</grape>
+        <producer>Penna Luigi + Figli</producer>
+        <character>Goldgelbe Farbe mit grünlichen Reflexen, am Gaumen elegante
+            delikate Süsse. Der Boden von Seno d'Elvio schenkt ihm einen blumigen
+            Nachgeschmack von Salbei, Zitronen und Orangen.
+        </character>
+        <qualification>Idealer Wein für eine gesellige Runde.</qualification>
+        <storagestability>2012 - 2014</storagestability>
+        <drinkingtemperature>8</drinkingtemperature>
+        <alcohol>5.5</alcohol>
+        <price>18.60</price>
+    </wine>
+
+    <wine>
+        <name>La Rose Rosé Demi-doux</name>
+        <color>Rose</color>
+        <country>Frankreich</country>
+        <year>2011</year>
+        <origin>IGP de demi doux</origin>
+        <grape>Grenache, Syrah, Sincaut</grape>
+        <producer>L'Herault</producer>
+        <character>Dieser Wein ist für Freunde leicht süßer und weicher Weine
+            gedacht. Der Sommer im Glas ist wohl die richtige Umschreibung
+            weil er
+            so verführerisch frisch und fruchtig ist.
+        </character>
+        <qualification>Ein idealer Ambiance Wein einfach zum Trinken und
+            Genießen, ohne dass man dazu etwas essen muss.
+        </qualification>
+        <storagestability>2010 - 2012</storagestability>
+        <drinkingtemperature>8</drinkingtemperature>
+        <alcohol>11.5</alcohol>
+        <price>13.00</price>
+    </wine>
+
+    <wine>
+        <name>Vina Enterizo</name>
+        <color>Rot</color>
+        <country>Spanien</country>
+        <year>2012</year>
+        <origin>DO Utiel Requena</origin>
+        <grape>100% Tempranillo</grape>
+        <producer>Bodegas Covinas</producer>
+        <character>Tiefes Rubinrot, fruchtige Nase nach Waldbeeren,
+            harmonischer Körper mit beerigem Abgang.
+        </character>
+        <qualification>Idealer Wein für jeden Tag, leicht und unkompliziert.
+        </qualification>
+        <storagestability>2013 - 2015</storagestability>
+        <drinkingtemperature>16</drinkingtemperature>
+        <alcohol>12.5</alcohol>
+        <price>9.50</price>
+    </wine>
+
+    <wine>
+        <name>Vina Enterizo Crianza</name>
+        <color>Rot</color>
+        <country>Spanien</country>
+        <year>2010</year>
+        <origin>DO Utiel Requena</origin>
+        <grape>Tempranillo, Granacha, Bobal</grape>
+        <producer>Bodegas Covinas</producer>
+        <character>Tiefes Rubinrot, fruchtige Nase mit leichten Röstaromen,
+            Vanille. Runder Körper, dezente Gerbstoffe, samtiger Abgang.
+        </character>
+        <qualification>Grilladen, Reisgerichte, aber auch nach dem Essen sehr
+            angenehm.
+        </qualification>
+        <storagestability>2012 - 2015</storagestability>
+        <drinkingtemperature>16</drinkingtemperature>
+        <alcohol>12.5</alcohol>
+        <price>12.50</price>
+    </wine>
+
+    <wine>
+        <name>Casa Illana Tradicion</name>
+        <color>Rot</color>
+        <country>Spanien</country>
+        <year>2007</year>
+        <origin>DO Ribera del Jucar</origin>
+        <grape>Bobal 45% Tempranillo 30% Syrah 25%</grape>
+        <producer>Casa Illana</producer>
+        <character>Klares Granatrot. Verführerischer Duft nach roten Früchten
+            und Veilchen. Gut strukturierter Körper mit cremigem Auftakt, am
+            Gaumen leicht mineralig, würzig und dezentem Holz. Langes elegantes
+            Finale.
+        </character>
+        <qualification>Passt hervorragend zu allen Fleischgerichten. Macht
+            auch nach dem Essen noch sehr viel Freude.
+        </qualification>
+        <storagestability>2010 - 2015</storagestability>
+        <drinkingtemperature>18</drinkingtemperature>
+        <alcohol>13.5</alcohol>
+        <price>15</price>
+    </wine>
+
+    <wine>
+        <name>MS Roble</name>
+        <color>Rot</color>
+        <country>Spanien</country>
+        <year>2010</year>
+        <origin>DOC Ribera del Duero</origin>
+        <grape>100% Tempranillo</grape>
+        <producer>Clave de Sol</producer>
+        <character>Dunkles Kirschrot. Intensive Nase nach roten Früchten. Gut
+            strukturierter Körper mit fruchtigen Auftakt, am Gaumen leicht
+            mineralig, würzig und dezentem Holz. Elegantes Finale.
+        </character>
+        <qualification>Passt hervorragend zu allen Fleischgerichten.
+        </qualification>
+        <storagestability>2012 - 2016</storagestability>
+        <drinkingtemperature>16</drinkingtemperature>
+        <alcohol>14.5</alcohol>
+        <price>15.50</price>
+    </wine>
+
+    <wine>
+        <name>Somsis Joven</name>
+        <color>Rot</color>
+        <country>Spanien</country>
+        <year>2011</year>
+        <origin>DO Montsant</origin>
+        <grape>30% Carignan, 35% Syrah, 10% Grenach 25% Cabernet Sauvignon
+        </grape>
+        <producer>Terra Personas</producer>
+        <character>Dunkles Rubinrot, schöne fruchtige Nase nach reifen
+            Früchten. Voller eleganter Körper rund und fast cremig. Weicher,
+            geschmeidiger,nachhaltiger Abgang.
+        </character>
+        <qualification>Sehr vielseitig, auch nach dem Essen ein Genuss.
+        </qualification>
+        <storagestability>2012 - 2016</storagestability>
+        <drinkingtemperature>16</drinkingtemperature>
+        <alcohol>14.5</alcohol>
+        <price>16.8</price>
+    </wine>
+
+    <wine>
+        <name>Casa Illana 3d5</name>
+        <color>Rot</color>
+        <country>Spanien</country>
+        <year>2006</year>
+        <origin>DO Ribera del Jucar</origin>
+        <grape>Tempranillo 35% Bobal 25% Syrah 20% Merlot 20%</grape>
+        <producer>Casa Illana</producer>
+        <character>Klares Granatrot. Verführerischer Intensive blumige Nase
+            mit leicht würzigen Noten. Fängt sehr rund an, zeigt dann sehr
+            schnell seinen kraftvollen Körper mit sehr gut balancierten Tanninen
+            und elegantem Holz. Langes volles Finale.
+        </character>
+        <qualification>Passt hervorragend zu allen Fleischgerichten und Käse.
+        </qualification>
+        <storagestability>2010 - 2015</storagestability>
+        <drinkingtemperature>18</drinkingtemperature>
+        <alcohol>14.5</alcohol>
+        <price>19</price>
+    </wine>
+
+    <wine>
+        <name>La Creueta</name>
+        <color>Rot</color>
+        <country>Spanien</country>
+        <year>2010</year>
+        <origin>DO Penedes</origin>
+        <grape>70% Cabernet Sauvignon 30% Merlot</grape>
+        <producer>Bodegas Massana Noya</producer>
+        <character>Dunkles Rot, duftet verführerisch nach Waldbeeren und
+            Pflaumen. Sehr gut integrierten Holz welches den kräftigen Körper
+            harmonisch unterstützt. Bleibt lange und sehr elegant.
+        </character>
+        <qualification>Vielseitig, Fleisch, Grilladen, Käse.</qualification>
+        <storagestability>2013 - 2016</storagestability>
+        <drinkingtemperature>18</drinkingtemperature>
+        <alcohol>14</alcohol>
+        <price>23</price>
+    </wine>
+
+    <wine>
+        <name>MS Crianza</name>
+        <color>Rot</color>
+        <country>Spanien</country>
+        <year>2009</year>
+        <origin>DOC Ribera del Duero</origin>
+        <grape>100% Tempranillo</grape>
+        <producer>Clave de Sol</producer>
+        <character>Dunkles fast schwarzes Rot. Intensive Nase nach roten
+            Früchten und einem hauch Vanille. Gehaltvoller Körper mit viel Tiefe
+            und Finesse. Fruchtiges langes Finale, kraftvoll und elegant.
+        </character>
+        <qualification>Passt hervorragend zu allen Fleischgerichten.
+        </qualification>
+        <storagestability>2012 - 2017</storagestability>
+        <drinkingtemperature>18</drinkingtemperature>
+        <alcohol>14</alcohol>
+        <price>25.60</price>
+    </wine>
+
+    <wine>
+        <name>Somsis Crianza</name>
+        <color>Rot</color>
+        <country>Spanien</country>
+        <year>2010</year>
+        <origin>DO Montsant</origin>
+        <grape>80% Carignan 10% Grenache 10% Syrah</grape>
+        <producer>Terra Personas</producer>
+        <character>Tief dunkles Rot, schöne fruchtige Nase mit eleganten
+            Röstaromen und etwas Leder. Voller Eleganter leicht mineralischer
+            Körper. Warmer, voller, nachhaltiger Abgang.
+        </character>
+        <qualification>zu kräftigen Speisen.</qualification>
+        <storagestability>2013 - 2018</storagestability>
+        <drinkingtemperature>18</drinkingtemperature>
+        <alcohol>14.50</alcohol>
+        <price>26.50</price>
+    </wine>
+
+    <wine>
+        <name>Primitivo</name>
+        <color>Rot</color>
+        <country>Italien</country>
+        <year>2011</year>
+        <origin>DOC Manduria</origin>
+        <grape>100% Primitivo</grape>
+        <producer>Manduria</producer>
+        <character>Kräftige Nase, körperreicher ausgewogener Wein mit weichen
+            Tanninen und elegantem Finale.
+        </character>
+        <qualification>Passt zur italienischen Küche, pikant gewürzten
+            Speisen, Fleischgerichten und Käse.
+        </qualification>
+        <storagestability>2012 - 2015</storagestability>
+        <drinkingtemperature>18</drinkingtemperature>
+        <alcohol>14</alcohol>
+        <price>16.00</price>
+    </wine>
+
+    <wine>
+        <name>Rimato vino di Ripasso</name>
+        <color>Rot</color>
+        <country>Italien</country>
+        <year>2010</year>
+        <origin>DOC Valpolicella</origin>
+        <grape>Corvina 70%, Rondinella 25%, Molinara 5%</grape>
+        <producer>Cantine Salvalai</producer>
+        <character>Duftnoten nach reifen Früchten, Konfitüre und Kirsche.
+            Nachhaltig, warm, weich und elegant.
+        </character>
+        <qualification>Zu Pastagerichten grilliertem oder geschmortem Fleisch.
+            Auch nach dem Essen ein Wein zum verweilen.
+        </qualification>
+        <storagestability>2012 - 2016</storagestability>
+        <drinkingtemperature>18</drinkingtemperature>
+        <alcohol>13.5</alcohol>
+        <price>21.50</price>
+    </wine>
+
+    <wine>
+        <name>Terra d'Alter Tinto</name>
+        <color>Rot</color>
+        <country>Portugal</country>
+        <year>2011</year>
+        <origin>V.R. Alentejo</origin>
+        <grape>Aragonez, Alicante Bouschet, Touriga National, Trincadeira
+        </grape>
+        <producer>Terras de Alter</producer>
+        <character>Sattes Rubinrot, in der Nase fruchtig, mittelschwerer
+            Körper mit schönen Gerbstoffen, elegantes Finale.
+        </character>
+        <qualification>Schöner Wein zu Grilladen, gutbürgerliche Küche.
+        </qualification>
+        <storagestability>2013 - 2015</storagestability>
+        <drinkingtemperature>16</drinkingtemperature>
+        <alcohol>13.5</alcohol>
+        <price>13.20</price>
+    </wine>
+
+    <wine>
+        <name>Val Pedro</name>
+        <color>Rot</color>
+        <country>Portugal</country>
+        <year>2009</year>
+        <origin>DOC Douro Superior</origin>
+        <grape>Tinta Roriz 43% Touriga Nacional 33% Touriga Franca 24%</grape>
+        <producer>Adega Grambeira</producer>
+        <character>Tiefes Kirschrot. Nase nach reifen Früchten mit einem Hauch
+            Vanille. Am Gaumen mit schöner Aromatik, guter Fülle und dezentem
+            Holz. Sehr runder Douro mit guter Länge.
+        </character>
+        <qualification>Eleganter vielseitiger Wein, dunkles Fleisch, Käse usw.
+        </qualification>
+        <storagestability>2012 - 2017</storagestability>
+        <drinkingtemperature>16</drinkingtemperature>
+        <alcohol>14.50</alcohol>
+        <price>14.90</price>
+    </wine>
+
+    <wine>
+        <name>Terra d'Alter Alicante Bouschet</name>
+        <color>Rot</color>
+        <country>Portugal</country>
+        <year>2011</year>
+        <origin>V.R. Alentejano</origin>
+        <grape>100% Alicante Bouschet</grape>
+        <producer>Terras de Alter</producer>
+        <character>Sein tief dunkles purpurrot kündigt die Intensität dieses
+            Weines an. Mit würzigen Aromen von roten und schwarzen Früchten ist
+            er kraftvoll mit einem vollen Körper. Am Gaumen kann man Pflaumen-
+            und Zwetschgennoten erkennen. Seidige Tannine, eine ausbalancierte
+            Säurestruktur und ein langer Schoko-Abgang runden den Genuss ab.
+        </character>
+        <qualification>Eleganter vielseitiger Wein, dunkles Fleisch, Käse usw.
+        </qualification>
+        <storagestability>2013 - 2016</storagestability>
+        <drinkingtemperature>16</drinkingtemperature>
+        <alcohol>15.5</alcohol>
+        <price>17.00</price>
+    </wine>
+
+    <wine>
+        <name>Terra d'Alter Reserva Tinto</name>
+        <color>Rot</color>
+        <country>Portugal</country>
+        <year>2010</year>
+        <origin>V.R Alentejano</origin>
+        <grape>85% Syrah, 15% Alicante Bouschet</grape>
+        <producer>Terras de Alter</producer>
+        <character>Tief dunkles Rubinrot, in der Nase fruchtig, leicht würzig
+            mit eleganten Röstaromen, gut strukturierter Körper, gehaltvoll und
+            elegant, samtig rundes Finale.
+        </character>
+        <qualification>Eleganter vielseitiger Wein, dunkles Fleisch, Käse usw.
+        </qualification>
+        <storagestability>2013 - 2017</storagestability>
+        <drinkingtemperature>18</drinkingtemperature>
+        <alcohol>14.5</alcohol>
+        <price>17.90</price>
+    </wine>
+
+    <wine>
+        <name>Telhas</name>
+        <color>Rot</color>
+        <country>Portugal</country>
+        <year>2009</year>
+        <origin>V.R Alentejano</origin>
+        <grape>93% Syrah, 7% Viognier</grape>
+        <producer>Terras de Alter</producer>
+        <character>Kirschrot, vielschichtiges beeriges und zugleich würziges
+            Bouquet, weich im Antrunk, am Gaumen dicht mit schöner Fruchtsüsse,
+            rassiges, frisches Finale, attraktiver Wein.
+        </character>
+        <qualification>Eleganter vielseitiger Wein, dunkles Fleisch, Käse usw.
+        </qualification>
+        <storagestability>2011 - 2016</storagestability>
+        <drinkingtemperature>18</drinkingtemperature>
+        <alcohol>14.50</alcohol>
+        <price>29.50</price>
+    </wine>
+
+    <wine>
+        <name>Plan de Dieu</name>
+        <color>Rot</color>
+        <country>Frankreich</country>
+        <year>2010</year>
+        <origin>AOP Cotes du Rhone Villages</origin>
+        <grape>75% Grenache 20% Syrah 5% Mourvèdre</grape>
+        <producer>Romain Duvernay</producer>
+        <character>Dunkles Rot mit leichten Violettschimmer. Intensive Nase
+            nach reifen roten Früchten. Am Gaumen leicht würzig und ausgewogen,
+            gute Balance, voll und warm. Harmonisch und gut strukturiert von A
+            -Z. sehr
+        </character>
+        <qualification>Vielseitiger Wein, Grilladen usw.</qualification>
+        <storagestability>2013 - 2017</storagestability>
+        <drinkingtemperature>16</drinkingtemperature>
+        <alcohol>15</alcohol>
+        <price>18.00</price>
+    </wine>
+
+    <wine>
+        <name>Vacqueyras</name>
+        <color>Rot</color>
+        <country>Frankreich</country>
+        <year>2011</year>
+        <origin>AOP Vacqueyras</origin>
+        <grape>65% Grenache 20% Syrah 15% Mourvèdre </grape>
+        <producer>Romain Duvernay</producer>
+        <character>Dunkles fast schwarzes Rot . Intensive Nase nach reifen
+            roten Früchten. Am Gaumen kraftvoll und komplex sehr gute
+            Tannin-Struktur, viel Frucht und langanhaltendes Finale.
+        </character>
+        <qualification>Kräftige Speisen dunkles Fleisch, Käse usw.
+        </qualification>
+        <storagestability>2013 - 2020</storagestability>
+        <drinkingtemperature>18</drinkingtemperature>
+        <alcohol>14.50</alcohol>
+        <price>26.50</price>
+    </wine>
+
+    <wine>
+        <name>Chateauneuf du Pape</name>
+        <color>Rot</color>
+        <country>Frankreich</country>
+        <year>2009</year>
+        <origin>AOP Chateauneuf du Pape</origin>
+        <grape>75% Grenache 15% Syrah 10% Mourvèdre</grape>
+        <producer>Romain Duvernay</producer>
+        <character>Dunkles intensives Rot. Verführerische Nase nach roten
+            Früchten, und dezentem Leder. Am Gaumen kraftvoll und elegant,
+            perfekte Harmonie abgerundet mit einem langem Finale.
+        </character>
+        <qualification>Kräftige Speisen dunkles Fleisch, Käse usw.
+        </qualification>
+        <storagestability>2013 - 2020</storagestability>
+        <drinkingtemperature>18</drinkingtemperature>
+        <alcohol>15.5</alcohol>
+        <price>39.50</price>
+    </wine>
+
+    <wine>
+        <name>Terra d'Alter Branco</name>
+        <color>Weiss</color>
+        <country>Portugal</country>
+        <year>2012</year>
+        <origin>V.R. Alentejo</origin>
+        <grape>Arinto, Roupeiro, Verdelho</grape>
+        <producer>Terras de Alter</producer>
+        <character>Hellgelbe Farbe mit leichten Grünreflexen. Frischer
+            verführerischer Duft nach exotischen Früchten. Am Gaumen trocken mit
+            angenehm aromatischem Körper und exotisch fruchtigem Abgang.
+        </character>
+        <qualification>Apero, leichte Sommerküche, Raclette und Fondue.
+        </qualification>
+        <storagestability>2013 - 2014</storagestability>
+        <drinkingtemperature>8</drinkingtemperature>
+        <alcohol>13</alcohol>
+        <price>12.90</price>
+    </wine>
+
+    <wine>
+        <name>Linteo Bianco</name>
+        <color>Weiss</color>
+        <country>Italien</country>
+        <year>2012</year>
+        <origin>IGT Sicilia</origin>
+        <grape>85% Inzolia 15% Grechiano</grape>
+        <producer>Cantine Francesco Minini</producer>
+        <character>Strohgelbe Farbe, fruchtige Nase, frisch und angenehm im
+            Mund, angenehmer weicher Abgang.
+        </character>
+        <qualification>Sehr vielseitiger Wein; Apero, leichte Sommerküche und
+            Raclette.
+        </qualification>
+        <storagestability>2013 - 2014</storagestability>
+        <drinkingtemperature>8</drinkingtemperature>
+        <alcohol>12</alcohol>
+        <price>13.50</price>
+    </wine>
+
+    <wine>
+        <name>Munarrate de Solabal Blanco</name>
+        <color>Weiss</color>
+        <country>Spanien</country>
+        <year>2011</year>
+        <origin>DOCa Rioja</origin>
+        <grape>80% Viura, 20% Malvasia</grape>
+        <producer>DOCa Rioja</producer>
+        <character>Helle Farbe, fruchtige Nase, frisch am Gaumen mit
+            mittelschwerem Körper, angenehmer weicher Abgang.
+        </character>
+        <qualification>Apero, Fisch, Meeresfrüchte, Paella.</qualification>
+        <storagestability>2012 - 2014</storagestability>
+        <drinkingtemperature>8</drinkingtemperature>
+        <alcohol>12.50</alcohol>
+        <price>14.20</price>
+    </wine>
+
+    <wine>
+        <name>Clave de Sol Verdejo</name>
+        <color>Weiss</color>
+        <country>Spanien</country>
+        <year>2012</year>
+        <origin>DOC Rueda</origin>
+        <grape>100% Verdejo</grape>
+        <producer>Clave de Sol</producer>
+        <character>Helles Strohgelb. In der Nase feine Zitrusnoten, Grapefruit
+            sowie Anannas. Ausgewogen, frisch und fruchtig am Gaumen. Ein tolles,
+            unkompliziertes Trinkvergnügen.
+        </character>
+        <qualification>Erfrischender Sommerwein.</qualification>
+        <storagestability>2012 - 2014</storagestability>
+        <drinkingtemperature>9</drinkingtemperature>
+        <alcohol>13</alcohol>
+        <price>15.00</price>
+    </wine>
+
+    <wine>
+        <name>Vinaredo Godello</name>
+        <color>Weiss</color>
+        <country>Spanien</country>
+        <year>2011</year>
+        <origin>DO Valdeorras</origin>
+        <grape>100% Godello</grape>
+        <producer>Santa Marta Bodegas</producer>
+        <character>Strohgelbe Farbe, intensiv fruchtige Nase erinnert an
+            Äpfel. Am Gaumen rund und sanft mit vollem Körper und wenig Säure.
+            Ausdrucksstarker langer Abgang.
+        </character>
+        <qualification>Hervorragender Apérowein, passt zu Fisch und Geflügel.
+        </qualification>
+        <storagestability>2012 - 2014</storagestability>
+        <drinkingtemperature>8</drinkingtemperature>
+        <alcohol>13</alcohol>
+        <price>17.80</price>
+    </wine>
+
+    <wine>
+        <name>Terra d'Alter Reserva Branco</name>
+        <color>Weiss</color>
+        <country>Portugal</country>
+        <year>2011</year>
+        <origin>V.R Alentejano</origin>
+        <grape>80% Viognier 10% Verdelho 10% Arinto</grape>
+        <producer>Terras de Alter</producer>
+        <character>Strohgelbe Farbe, intensiver Duft nach exotischen Früchten.
+            Voller Körper nach Pfirsich und Aprikosen, finessenreich und Elegant.
+            Langer harmonischer Nachhall.
+        </character>
+        <qualification>Apero, leichte Sommerküche, Fisch.</qualification>
+        <storagestability>2012 - 2016</storagestability>
+        <drinkingtemperature>8</drinkingtemperature>
+        <alcohol>13.5</alcohol>
+        <price>17.90</price>
+    </wine>
+
+    <wine>
+        <name>Païën Heida Reserve</name>
+        <color>Weiss</color>
+        <country>Schweiz</country>
+        <year>2011</year>
+        <origin>AOC Wallis</origin>
+        <grape>100% Heida</grape>
+        <producer>J. Germanier</producer>
+        <character>Helles Gelb. Delikate nussige Nase, am Gaumen körperreich
+            und Frisch, langer lebendiger Abgang.
+        </character>
+        <qualification>Fisch, Meeresfrüchte, Fondue</qualification>
+        <storagestability>2012 - 2014</storagestability>
+        <drinkingtemperature>8</drinkingtemperature>
+        <alcohol>13</alcohol>
+        <price>21.30</price>
+    </wine>
+
+    <wine>
+        <name>Terra d'Alter Rosé</name>
+        <color>Rose</color>
+        <country>Portugal</country>
+        <year>2011</year>
+        <origin>V.R. Alentejo</origin>
+        <grape>Aragones, Touriga National</grape>
+        <producer>Terras de Alter</producer>
+        <character>Himbeerfarbe. Fruchtige Nase, am Gaumen vollmundig und
+            rund, ausgewogen und elegant.
+        </character>
+        <qualification>Schöner Sommerwein, passt zu leichteren
+            Fleischgerichten und Grilladen.
+        </qualification>
+        <storagestability>2012 - 2014</storagestability>
+        <drinkingtemperature>8</drinkingtemperature>
+        <alcohol>13.5</alcohol>
+        <price>12.70</price>
+    </wine>
+
+    <wine>
+        <name>Munarrate de Solabal Rosado</name>
+        <color>Rose</color>
+        <country>Spanien</country>
+        <year>2011</year>
+        <origin>DOCa Rioja</origin>
+        <grape>30% Tempranillo, 30% Viura 40% Granacha</grape>
+        <producer>Bodegas Solabal</producer>
+        <character>Sattes Lachsrosa. Intensive Fruchtnase nach Cassis,
+            Pfirsich und Aprikosen. Leicht spritziger, gut balancierter weicher
+            Körper. Anhaltender fruchtiger Nachgeschmack.
+        </character>
+        <qualification>Schöner Sommerwein, passt zu leichteren
+            Fleischgerichten und Grilladen.
+        </qualification>
+        <storagestability>2012 - 2014</storagestability>
+        <drinkingtemperature>8</drinkingtemperature>
+        <alcohol>13.5</alcohol>
+        <price>13.90</price>
+    </wine>
+
+</catalog>

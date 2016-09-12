@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:f="http://xmlns.jcp.org/jsf/core"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+    template="./template.xhtml">
+
+    <ui:param name="pageTitle" value="#{i18n.page_title_catalogadmin}" />
+
+    <ui:define name="content">
+
+        <h:panelGroup id="custom_messages">
+            <h:panelGroup layout="block" styleClass="alert alert-success alert-dismissible fade in" a:role="alert" rendered="#{manageBean.message != ''}">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                #{manageBean.message}
+            </h:panelGroup>
+        </h:panelGroup>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+            
+                <h:panelGroup layout="block" styleClass="model-switcher">
+                    <h:form>
+                        <h:selectOneRadio value="#{catalogBean.selectedForm}">
+                            <f:selectItem itemLabel="#{i18n.form_select_wine_label}" itemValue="wine" />
+                            <f:selectItem itemLabel="#{i18n.form_select_producer_label}" itemValue="producer" />
+                            <f:ajax render="newWine newProducer custom_messages" listener="#{manageBean.reloadForms}" />
+                        </h:selectOneRadio>
+                    </h:form>
+                </h:panelGroup>
+
+                <h2>#{i18n.form_add}</h2>
+
+                <h:form id="newWine" styleClass="insert">
+                    <h:panelGroup rendered="#{catalogBean.selectedForm == 'wine'}">
+
+                    <!-- Name -->
+                        <div class="form-group">
+                            <h:outputLabel for="wine_name" value="#{i18n.form_field_name_label}" />
+                            <h:inputText id="wine_name" value="#{manageBean.newWine.name}"
+                                styleClass="form-control #{component.valid ? 'valid' : 'error'}"
+                                a:placeholder="#{manageBean.trim(manageBean.randomWine != null ? manageBean.randomWine.name : i18n.form_field_name_placeholder)}" />
+                            <h:panelGroup styleClass="alert alert-danger" layout="block" role="alert">
+                              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                              <h:outputText value="&#160;" /><h:message for="wine_name" errorClass="" />
+                            </h:panelGroup>
+                        </div>
+
+                    <!-- Farbe -->
+                        <div class="form-group">
+                            <h:outputLabel for="color" value="#{i18n.form_field_color_label}" />
+                            <h:inputText id="color" value="#{manageBean.newWine.color}"
+                                styleClass="form-control #{component.valid ? 'valid' : 'error'}" 
+                                a:placeholder="#{manageBean.trim(manageBean.randomWine != null ? manageBean.randomWine.color : i18n.form_field_color_placeholder)}" />
+                            <h:panelGroup styleClass="alert alert-danger" layout="block" role="alert">
+                              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                              <h:outputText value="&#160;" /><h:message for="color" />
+                            </h:panelGroup>
+                        </div>
+
+                    <!-- Land -->
+                        <div class="form-group">
+                            <h:outputLabel for="country" value="#{i18n.form_field_country_label}" />
+                            <h:inputText id="country" value="#{manageBean.newWine.country}"
+                                styleClass="form-control #{component.valid ? 'valid' : 'error'}"
+                                a:placeholder="#{manageBean.trim(manageBean.randomWine != null ? manageBean.randomWine.country : i18n.form_field_country_placeholder)}" />
+                            <h:panelGroup styleClass="alert alert-danger" layout="block" role="alert">
+                              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                              <h:outputText value="&#160;" /><h:message for="country" />
+                            </h:panelGroup>
+                        </div>
+
+                    <!-- Jahr -->
+                        <div class="form-group">
+                            <h:outputLabel for="year" value="#{i18n.form_field_year_label}" />
+                            <h:inputText id="year" value="#{manageBean.newWine.year}"
+                                styleClass="form-control #{component.valid ? 'valid' : 'error'}"
+                                a:placeholder="#{i18n.form_field_year_placeholder}">
+                                <f:convertDateTime pattern="yyyy" />
+                            </h:inputText>
+                            <h:panelGroup styleClass="alert alert-danger" layout="block" role="alert">
+                              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                              <h:outputText value="&#160;" /><h:message for="year" />
+                            </h:panelGroup>
+                        </div>
+
+                    <!-- Traube -->
+                        <div class="form-group">
+                            <h:outputLabel for="grape" value="#{i18n.form_field_grape_label}" />
+                            <h:inputTextarea id="grape" value="#{manageBean.newWine.grape}"
+                                styleClass="form-control #{component.valid ? 'valid' : 'error'}"
+                                a:placeholder="#{manageBean.trim(manageBean.randomWine != null ? manageBean.randomWine.grape : i18n.form_field_grape_placeholder)}" />
+                            <h:panelGroup styleClass="alert alert-danger" layout="block" role="alert">
+                              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                              <h:outputText value="&#160;" /><h:message for="grape" />
+                            </h:panelGroup>
+                        </div>
+
+                    <!-- Produzent -->
+                        <div class="form-group">
+                            <h:outputLabel for="producer" value="#{i18n.form_field_producer_label}" />
+                            <h:selectOneMenu id="producer" value="#{manageBean.newWine.producer}"
+                                styleClass="selectpicker form-control #{component.valid ? 'valid' : 'error'}"
+                                a:title="#{i18n.form_field_producer_request}"
+                                a:data-dropup-auto="false"
+                                a:data-live-search="true">
+                                <f:selectItems value="#{manageBean.avaliableProducers}" var="producer" itemLabel="#{producer.name}" itemValue="#{producer}" />
+                                <f:converter converterId="ProducerConverter" />
+                                <f:ajax render="wine_origin" />
+                            </h:selectOneMenu>
+                            <h:panelGroup styleClass="alert alert-danger" layout="block" role="alert">
+                              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                              <h:outputText value="&#160;" /><h:message for="producer" />
+                            </h:panelGroup>
+                        </div>
+
+                    <!-- Herkunft -->
+                        <div class="form-group">
+                            <h:outputLabel for="wine_origin" value="#{i18n.form_field_origin_label}" />
+                            <h:inputText id="wine_origin" value="#{manageBean.newWine.producer.origin}"
+                                styleClass="form-control #{component.valid ? 'valid' : 'error'}"
+                                a:disabled="disabled" />
+                        </div>
+
+                    <!-- Charakter -->
+                        <div class="form-group">
+                            <h:outputLabel for="character" value="#{i18n.form_field_character_label}" />
+                            <h:inputTextarea id="character" value="#{manageBean.newWine.character}"
+                                styleClass="form-control #{component.valid ? 'valid' : 'error'}"
+                                a:placeholder="#{manageBean.trim(manageBean.randomWine != null ? manageBean.randomWine.character : i18n.form_field_character_placeholder)}" />
+                            <h:panelGroup styleClass="alert alert-danger" layout="block" role="alert">
+                              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                              <h:outputText value="&#160;" /><h:message for="character" />
+                            </h:panelGroup>
+                        </div>
+
+                    <!-- Empfehlung -->
+                        <div class="form-group">
+                            <h:outputLabel for="qualification" value="#{i18n.form_field_qualification_label}" />
+                            <h:inputTextarea id="qualification" value="#{manageBean.newWine.qualification}"
+                                styleClass="form-control #{component.valid ? 'valid' : 'error'}" 
+                                a:placeholder="#{manageBean.trim(manageBean.randomWine != null ? manageBean.randomWine.qualification : i18n.form_field_qualification_placeholder)}" />
+                            <h:panelGroup styleClass="alert alert-danger" layout="block" role="alert">
+                              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                              <h:outputText value="&#160;" /><h:message for="qualification" />
+                            </h:panelGroup>
+                        </div>
+
+                    <!-- Haltbarkeit -->
+                        <div class="form-group">
+                            <h:outputLabel for="storagestability" value="#{i18n.form_field_storagestability_label}" />
+                            <h:inputText id="storagestability" value="#{manageBean.newWine.storagestability}"
+                                styleClass="form-control #{component.valid ? 'valid' : 'error'}" 
+                                a:placeholder="#{manageBean.trim(manageBean.randomWine != null ? manageBean.randomWine.storagestability : i18n.form_field_storagestability_placeholder)}" />
+                            <h:panelGroup styleClass="alert alert-danger" layout="block" role="alert">
+                              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                              <h:outputText value="&#160;" /><h:message for="storagestability" />
+                            </h:panelGroup>
+                        </div>
+
+                    <!-- Trinktemperatur -->
+                        <div class="form-group">
+                            <h:outputLabel for="drinkingtemperature" value="#{i18n.form_field_drinkingtemperature_label}" />
+                            <h:inputText id="drinkingtemperature" value="#{manageBean.newWine.drinkingtemperature}"
+                                styleClass="form-control #{component.valid ? 'valid' : 'error'}" 
+                                a:type="number"
+                                a:step="1"
+                                a:placeholder="#{manageBean.randomWine != null ? manageBean.randomWine.drinkingtemperature : i18n.form_field_drinkingtemperature_placeholder}" />
+                            <h:panelGroup styleClass="alert alert-danger" layout="block" role="alert">
+                              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                              <h:outputText value="&#160;" /><h:message for="drinkingtemperature" />
+                            </h:panelGroup>
+                        </div>
+
+                    <!-- Alkohol -->
+                        <div class="form-group">
+                            <h:outputLabel for="alcohol" value="#{i18n.form_field_alcohol_label}" />
+                            <h:inputText id="alcohol" value="#{manageBean.newWine.alcohol}"
+                                styleClass="form-control #{component.valid ? 'valid' : 'error'}"
+                                a:type="number"
+                                a:step="0.10" 
+                                a:placeholder="#{manageBean.randomWine != null ? manageBean.randomWine.alcohol : i18n.form_field_alcohol_placeholder}" />
+                            <h:panelGroup styleClass="alert alert-danger" layout="block" role="alert">
+                              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                              <h:outputText value="&#160;" /><h:message for="alcohol" />
+                            </h:panelGroup>
+                        </div>
+
+                    <!-- Preis -->
+                        <div class="form-group">
+                            <h:outputLabel for="price" value="#{i18n.form_field_price_label}" />
+                            <h:inputText id="price" value="#{manageBean.newWine.price}"
+                                styleClass="form-control #{component.valid ? 'valid' : 'error'}"
+                                a:type="number"
+                                a:step="0.5" 
+                                a:placeholder="#{manageBean.randomWine != null ? manageBean.randomWine.price : i18n.form_field_price_placeholder}" />
+                            <h:panelGroup styleClass="alert alert-danger" layout="block" role="alert">
+                              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                              <h:outputText value="&#160;" /><h:message for="price" />
+                            </h:panelGroup>
+                        </div>
+
+                        <h:commandButton styleClass="btn btn-default" value="#{i18n.form_add}">
+                            <f:ajax listener="#{manageBean.addWine}" execute="@form" render="newWine custom_messages" />
+                        </h:commandButton>
+                    </h:panelGroup>
+                </h:form>
+
+                <h:form id="newProducer" styleClass="insert">
+                    <h:panelGroup rendered="#{catalogBean.selectedForm == 'producer'}">
+
+                    <!-- Name -->
+                        <div class="form-group">
+                            <h:outputLabel for="producer_name" value="#{i18n.form_field_name_label}" />
+                            <h:inputText id="producer_name" value="#{manageBean.newProducer.name}"
+                                styleClass="form-control #{component.valid ? 'valid' : 'error'}" 
+                                a:placeholder="#{manageBean.trim(manageBean.randomProducer != null ? manageBean.randomProducer.name : i18n.form_field_producer_placeholder)}" />
+                            <h:panelGroup styleClass="alert alert-danger" layout="block" role="alert">
+                              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                              <h:outputText value="&#160;" /><h:message for="producer_name" errorClass="" />
+                            </h:panelGroup>
+                        </div>
+
+                    <!-- Herkunft -->
+                        <div class="form-group">
+                            <h:outputLabel for="producer_origin" value="#{i18n.form_field_origin_label}" />
+                            <h:inputText id="producer_origin" value="#{manageBean.newProducer.origin}"
+                                styleClass="form-control #{component.valid ? 'valid' : 'error'}" 
+                                a:placeholder="#{manageBean.trim(manageBean.randomProducer != null ? manageBean.randomProducer.origin : i18n.form_field_origin_placeholder)}" />
+                            <h:panelGroup styleClass="alert alert-danger" layout="block" role="alert">
+                              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                              <h:outputText value="&#160;" /><h:message for="producer_origin" />
+                            </h:panelGroup>
+                        </div>
+
+                        <h:commandButton styleClass="btn btn-default" value="#{i18n.form_add}">
+                            <f:ajax listener="#{manageBean.addProducer}" execute="@form" render="newProducer custom_messages"/>
+                        </h:commandButton>
+                    </h:panelGroup>
+                </h:form>
+            </div>
+
+        </div>
+        
+        <script>
+            jsf.ajax.addOnEvent(function(status) {
+                if (status.status == "success") {
+                    $('body').stop().animate({scrollTop:0}, '250', 'swing');
+                    $('.selectpicker').each(function () {
+                        var $selectpicker = $(this);
+                        $.fn.selectpicker.call($selectpicker, $selectpicker.data());
+                    });
+                }
+            });
+        </script>
+
+    </ui:define>
+
+</ui:composition>

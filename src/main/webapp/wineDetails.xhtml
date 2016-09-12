@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+
+<ui:composition
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:f="http://xmlns.jcp.org/jsf/core"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    template="./template.xhtml">
+
+    <ui:param
+        name="pageTitle"
+        value="Weindetails" />
+
+    <ui:define name="content">
+    
+        <h2>#{catalogBean.selectedWine.name}</h2>
+
+        <table class="table">
+            <tr>
+                <th><h:outputText value="#{i18n.table_header_country_label}" /></th>
+                <td><h:outputText value="#{catalogBean.selectedWine.country}" /></td>
+            </tr>
+            <tr>
+                <th><h:outputText value="#{i18n.table_header_year_label}" /></th>
+                <td>
+                    <h:outputText value="#{catalogBean.selectedWine.year}">
+                        <f:convertDateTime pattern="yyyy" />
+                    </h:outputText>
+                </td>
+            </tr>
+            <tr>
+                <th><h:outputText value="#{i18n.table_header_origin_label}" /></th>
+                <td><h:outputText value="#{catalogBean.selectedWine.producer.origin}" /></td>
+            </tr>
+            <tr>
+                <th><h:outputText value="#{i18n.table_header_grape_label}" /></th>
+                <td><h:outputText value="#{catalogBean.selectedWine.grape}" /></td>
+            </tr>
+            <tr>
+                <th><h:outputText value="#{i18n.table_header_producer_label}" /></th>
+                <td><h:outputText value="#{catalogBean.selectedWine.producer.name}" /></td>
+            </tr>
+            <tr>
+                <th><h:outputText value="#{i18n.table_header_storagestability_label}" /></th>
+                <td><h:outputText value="#{catalogBean.selectedWine.storagestability}" /></td>
+            </tr>
+            <tr>
+                <th><h:outputText value="#{i18n.table_header_drinkingtemperature_label}" /></th>
+                <td>
+                    <h:outputText value="#{catalogBean.selectedWine.drinkingtemperature}">
+                        <f:convertNumber
+                            pattern="0'°' C" />
+                    </h:outputText>
+                </td>
+            </tr>
+            <tr>
+                <th><h:outputText value="#{i18n.table_header_alcohol_label}" /></th>
+                <td>
+                    <h:outputText value="#{catalogBean.selectedWine.alcohol}">
+                        <f:convertNumber
+                            pattern="0 '%' Vol."
+                            minFractionDigits="2" />
+                    </h:outputText>
+                </td>
+            </tr>
+            <tr>
+                <th><h:outputText value="#{i18n.table_header_price_label}" /></th>
+                <td>
+                    <h:outputText value="#{catalogBean.selectedWine.price}">
+                        <f:convertNumber
+                            currencyCode="CHF"
+                            type="currency" />
+                    </h:outputText>
+                </td>
+            </tr>
+        </table>
+        <h:form>
+            <h:commandButton
+                styleClass="btn btn-default"
+                value="#{i18n.back}"
+                action="#{catalogBean.back}" />
+        </h:form>
+
+    </ui:define>
+
+</ui:composition>

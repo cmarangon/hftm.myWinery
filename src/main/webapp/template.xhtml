@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:f="http://xmlns.jcp.org/jsf/core"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <h:outputStylesheet name="css/bootstrap.min.css" />
+        <h:outputStylesheet name="css/bootstrap-select.min.css" />
+        <h:outputStylesheet name="css/dataTables.bootstrap.min.css" />
+        <h:outputStylesheet name="css/style.css" />
+        
+        <h:outputScript name="js/jquery.min.js" />
+        <h:outputScript name="js/jquery.dataTables.min.js" />
+        <h:outputScript name="js/bootstrap.min.js" />
+        <h:outputScript name="js/bootstrap-select.min.js" />
+        
+        <link rel="shortcut icon" href="#{resource['images/favicon.ico']}" type="image/x-icon" />
+        <link rel="icon" href="#{resource['images/favicon.ico']}" type="image/x-icon" />
+        
+        <title>#{i18n.main_title} - #{pageTitle}</title>
+    </h:head>
+    
+    
+    <f:view locale="#{languageBean.locale}">
+        <h:body>
+        
+            
+            <header class="navbar navbar-fixed-top">
+                <div class="container">
+                    <ui:insert name="header">
+                        <ui:include src="header.xhtml" />
+                    </ui:insert>
+                </div>
+            </header>
+            
+            <section class="content">
+                <div class="container">
+                    <ui:insert name="content" />
+                </div>
+            </section>
+            
+            <footer>
+                <div class="container">
+                    <ui:insert name="footer">
+                        <ui:include src="footer.xhtml" />
+                    </ui:insert>
+                </div>
+            </footer>
+            
+            <script type="text/javascript">
+                jsf.ajax.addOnError(function (event) {
+                    console.log(event);
+                });
+                $(function () {
+                    $('[data-toggle="tooltip"]').tooltip()
+                })
+            </script>
+
+        </h:body>
+    </f:view>
+
+</html>

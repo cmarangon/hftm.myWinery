@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+    xmlns:cc="http://java.sun.com/jsf/composite">
+
+    <cc:interface>
+        <cc:attribute name="value" />
+        <cc:attribute name="inc" />
+        <cc:attribute name="min" />
+        <cc:attribute name="max" />
+        <cc:attribute name="save" method-signature="java.lang.String action()" />
+    </cc:interface>
+    
+    <cc:implementation>
+        <div class="input-spinner">
+            <h:outputStylesheet library="util" name="inputSpinner.css" />
+            <h:form>
+                <h:inputText value="#{cc.attrs.value}" a:type="number" a:step="#{cc.attrs.inc}" a:min="#{cc.attrs.min}" a:max="#{cc.attrs.max}" required="True" a:required="required" />
+                <h:commandButton action="#{cc.attrs.save}" value="&#xe031;" styleClass="btn btn-default" a:title="#{cc.resourceBundleMap.update}" a:data-toggle="tooltip" />
+            </h:form>
+        </div>
+    </cc:implementation>
+
+</html>

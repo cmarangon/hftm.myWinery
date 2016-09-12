@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:f="http://xmlns.jcp.org/jsf/core"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+    xmlns:util="http://java.sun.com/jsf/composite/util"
+    template="./template.xhtml">
+
+    <ui:param name="pageTitle" value="#{i18n.page_title_catalog}" />
+
+    <ui:define name="content">
+
+        <div class="catalog">
+
+            <h2>#{i18n.search_title}</h2>
+
+            <div class="col-xs-12 col-md-4">
+
+                <h:form id="main" styleClass="search">
+                    <div class="form-group">
+                        <h:outputLabel for="name" value="#{i18n.form_field_name_label}" />
+                        <h:inputText id="name" value="#{catalogBean.name}"
+                            styleClass="form-control"
+                            a:placeholder="#{i18n.form_field_name_placeholder}">
+                            <f:ajax event="keyup" listener="#{catalogBean.searchWines}" execute="@form" render="results messages" />
+                        </h:inputText>
+                    </div>
+                    <div class="form-group">
+                        <h:outputLabel for="countries" value="#{i18n.form_field_country_label}" />
+                        <h:selectManyListbox id="countries" value="#{catalogBean.selectedCountries}"
+                            styleClass="form-control selectpicker"
+                            a:title="#{i18n.form_select_some_countries}"
+                            a:data-selected-text-format="count > 3"
+                            a:data-count-selected-text="#{i18n.form_select_x_countries_selected}">
+                            <f:selectItems value="#{catalogBean.availableCountries}" />
+                            <f:ajax listener="#{catalogBean.searchWines}" execute="@form" render="results messages" />
+                        </h:selectManyListbox>
+                    </div>
+                    <div class="form-group">
+                        <h:outputLabel for="colors" value="#{i18n.form_field_color_label}" />
+                        <h:selectManyListbox id="colors" value="#{catalogBean.selectedColors}"
+                            styleClass="form-control selectpicker"  
+                            a:title="#{i18n.form_select_some_colors}"
+                            a:data-selected-text-format="count > 2" 
+                            a:data-count-selected-text="#{i18n.form_select_x_colors_selected}">
+                            <f:selectItems value="#{catalogBean.availableColors}" />
+                            <f:ajax listener="#{catalogBean.searchWines}" execute="@form" render="results messages" />
+                        </h:selectManyListbox>
+                    </div>
+                </h:form>
+                
+                <h:panelGroup id="messages">
+                    <h:panelGroup layout="block" role="alert" rendered="#{not empty facesContext.messageList}"
+                        styleClass="alert alert-list alert-danger">
+                      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                      <h:messages />
+                    </h:panelGroup>
+                </h:panelGroup>
+            </div>
+
+            <div class="col-xs-12 col-md-7 col-md-offset-1">
+                <h:panelGroup id="results" class="row search-results" layout="block">
+                
+                    <h:dataTable styleClass="table" value="#{catalogBean.foundWines}" var="wine"
+                        cellpadding="0" cellspacing="5" border="0" rendered="#{not empty catalogBean.foundWines}">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{i18n.table_header_name_label}" />
+                            </f:facet>
+                            <h:panelGroup>
+                                <h:form>
+                                    <h:commandLink value="#{wine.name}" action="#{catalogBean.setSelectedWine(wine, 'catalog')}" />
+                                </h:form>
+                            </h:panelGroup>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{i18n.table_header_color_label}" />
+                            </f:facet>
+                            <h:panelGroup>
+                                #{wine.color}
+                            </h:panelGroup>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{i18n.table_header_country_label}" />
+                            </f:facet>
+                            <h:panelGroup>
+                                <h:form>
+                                    #{wine.country}
+                                </h:form>
+                            </h:panelGroup>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{i18n.table_header_price_label}" />
+                            </f:facet>
+                            <h:outputText value="#{wine.price}">
+                                <f:convertNumber currencyCode="CHF" type="currency" />
+                            </h:outputText>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{i18n.table_header_add_label}" />
+                            </f:facet>
+                            <util:inputSpinner value="#{wine.amount}" inc="6" min="0" max="999" save="#{catalogBean.addStockItem(wine)}" />
+                        </h:column>
+                    </h:dataTable>
+
+                </h:panelGroup>
+            </div>
+
+        </div>
+
+        <script>
+            $("#results table").DataTable({
+                "searching": false,
+                "paging":    false,
+                "info":      false
+            });
+            jsf.ajax.addOnEvent(function(status) {
+                if (status.status == "success") {
+                    $("#results table").DataTable({
+                        "searching": false,
+                        "paging":    false,
+                        "info":      false
+                    });
+                }
+            });
+        </script>
+
+    </ui:define>
+
+</ui:composition>

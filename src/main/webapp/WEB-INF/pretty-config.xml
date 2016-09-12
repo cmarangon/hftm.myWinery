@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretty-config xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://ocpsoft.org/schema/rewrite-config-prettyfaces
+                      http://ocpsoft.org/xml/ns/prettyfaces/rewrite-config-prettyfaces.xsd">
+
+    <url-mapping id="catalog">
+        <pattern value="/catalog" />
+        <view-id value="/catalog.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="details">
+        <pattern value="/details" />
+        <view-id value="/wineDetails.xhtml" />
+    </url-mapping>
+    
+    <url-mapping id="cellar">
+        <pattern value="/cellar" />
+        <view-id value="/cellar.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="manage">
+        <pattern value="/manage" />
+        <view-id value="/catalogadmin.xhtml" />
+    </url-mapping>
+    
+    <url-mapping id="general_error">
+        <pattern value="/general_error" />
+        <view-id value="/error_general.xhtml" />
+    </url-mapping>
+    
+    <url-mapping id="view_expired">
+        <pattern value="/view_expired" />
+        <view-id value="/error_expired.xhtml" />
+    </url-mapping>
+
+</pretty-config>
