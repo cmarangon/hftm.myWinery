@@ -116,18 +116,18 @@
         </div>
 
         <script>
-            $("#results table").DataTable({
-                "searching": false,
-                "paging":    false,
-                "info":      false
-            });
+            var tableOptions = {
+                    "columnDefs": [
+                       {"orderable": false, "targets": 4}
+                     ],
+                    "searching": false,
+                    "paging":    false,
+                    "info":      false
+                }; 
+            $("#results table").DataTable(tableOptions);
             jsf.ajax.addOnEvent(function(status) {
                 if (status.status == "success") {
-                    $("#results table").DataTable({
-                        "searching": false,
-                        "paging":    false,
-                        "info":      false
-                    });
+                    $("#results table").DataTable(tableOptions);
                 }
             });
         </script>

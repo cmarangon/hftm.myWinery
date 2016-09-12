@@ -71,6 +71,9 @@
         
          <script>
             $("table").DataTable({
+                "columnDefs": [
+                   {"orderable": false, "targets": 4}
+                 ],
                 "searching": false,
                 "paging":    false,
                 "info":      false

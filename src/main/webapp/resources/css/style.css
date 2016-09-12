@@ -28,6 +28,7 @@ body {
     background-color: white;
     color:#666;
     padding-top: 117px;
+    padding-bottom: 150px;
 }
 a {
     color: #ad163f;
@@ -54,6 +55,9 @@ footer {
     margin-top: 100px;
     color: #99979c;
     background-color: #2a2730;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 h1.title {
@@ -190,9 +194,9 @@ label {
     padding-left: 20px;
 }
 
-.table th {
-    width: 160px;
-}
+table input[type=submit] {
+    padding: 2px 8px;
+}  
 
 .cellar table th:last-child {
     min-width: 105px;
